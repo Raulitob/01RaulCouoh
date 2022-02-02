@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventana5</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <center><h1>PALABRAS PRINCIPALES</h1></center>
+    <br>
+    <br>
+    <center>
+        <img src="img/hamaca.png" alt="" width="200" height="200">
+        <h3 id="hamaca"> </h3>
+        <div class="botones">
+            <script>
+                var amaca7 = new Audio();
+                var hammock7 = new Audio();
+                var hayabilkan7 = new Audio();
+                amaca7.src="./audios/español/amaca7.aac";
+                hammock7.src="./audios/ingles/hammock7.aac";
+                hayabilkan7.src="./audios/maya/hayabil-kan7.aac";
+            </script>
+              <p id="titulo" class="display-3 py-5"></p>
+             <a class="español" id="enviar" onclick='document.getElementById("titulo").innerHTML = nombre;' onmousedown="amaca7.play()">Español</a>
+             <a class="ingles" id="enviar" onclick='document.getElementById("titulo").innerHTML = nombres;' onmousedown="hammock7.play()">Inglés</a>
+             <a class="maya" id="enviar" onclick='document.getElementById("titulo").innerHTML = App;' onmousedown="hayabilkan7.play()">Maya</a>
+        </div>
+        <script>
+            var nombre = "Hamaca";
+            var nombres = "Hammock";
+            var App = " Hayabil-kaan";
+        </script>
+        <br>
+        <br>
+        <img src="img/mesa-circular.png" alt="" width="200" height="200">
+        <h3 id="mesa-circular"> </h3>
+        <div class="botones">
+            <script>
+                var mesa = new Audio();
+                var table8 = new Audio();
+                var mayakche8 = new Audio();
+                mesa.src="./audios/español/mesa8.aac";
+                table8.src="./audios/ingles/table8.aac";
+                mayakche8.src="./audios/maya/mayak che8.aac";
+            </script>
+            </script>
+            <p id="titulo2" class="display-3 py-5"></p>
+             <a class="español" id="enviar" onclick='document.getElementById("titulo2").innerHTML = espa;' onmousedown="mesa.play()">Español</a>
+             <a class="ingles" id="enviar" onclick='document.getElementById("titulo2").innerHTML = mayaa;' onmousedown="table8.play()">Inglés</a>
+             <a class="maya" id="enviar" onclick='document.getElementById("titulo2").innerHTML = inglees;'onmousedown="mayakche8.play()">Maya</a>
+        </div>
+        <script>
+            var espa= "Mesa";
+            var mayaa= "Table";
+            var inglees= "Mayak, che";
+        </script>
+        <br>
+        <br>
+        <img src="img/puerta.png" alt="" width="200" height="200">
+        <h3 id="puerta"> </h3>
+        <div class="botones">
+            <script>
+                var puerta9 = new Audio();
+                var duor9 = new Audio();
+                var joolnaj9 = new Audio();
+                puerta9.src="./audios/español/puerta10.aac";
+                duor9.src="./audios/ingles/duor9.aac";
+                joolnaj9.src="./audios/maya/joolnaj9.aac";
+            </script>
+            <p id="titulo3" class="display-3 py-5"></p>
+             <a class="español" id="enviar" onclick='document.getElementById("titulo3").innerHTML = sp;' onmousedown="puerta9.play()">Español</a>
+             <a class="ingles" id="enviar" onclick='document.getElementById("titulo3").innerHTML = In;' onmousedown="duor9.play()">Inglés</a>
+             <a class="maya" id="enviar" onclick='document.getElementById("titulo3").innerHTML = no;' onmousedown="joolnaj9.play()">Maya</a>
+        </div>
+        <script>
+            var sp="Puerta";
+            var In="Door";
+            var no="Jool naj";
+        </script>
+        <br>
+        <br>
+        <br>
+        <a href="./ventana4.html" class="myButton">Atrás</a>
+    </center>
+
+     
+
+</body>
+</html>

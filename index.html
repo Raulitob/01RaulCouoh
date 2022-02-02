@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style type="text/css">
+        [requerid]{
+            box-shadow: 0 0 10px 1px red;
+
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <h1 class="center"><small>Utilizar la camara para Tomar foto</h1></smaill>
+        <p id="errorTxt"></p>
+        <div class="camara">
+            <video  id="theVideo" controls autoplay class="q"></video>
+            <canvas id="theCanvas" class="q"></canvas>
+        </div>
+         <div class="boton">
+        <button id="btnCapture" class="enviar">Capturar</button>
+        <button id="btnDownloadImage" class="enviar">Descargar la captura imagen</button>
+        <br>
+        <br>
+        <!--script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+  
+    </form>
+         </div>
+        <script type="text/javascript">
+            var videoWidth = 320;
+            var videoHeight = 240;
+            var videoTag = document.getElementById('theVideo');
+            var canvasTag = document.getElementById('theCanvas');
+            var btnCapture = document.getElementById("btnCapture");
+            var btnDownloadImage = document.getElementById("btnDownloadImage");
+            videoTag.setAttribute('width', videoWidth);
+            videoTag.setAttribute('height', videoHeight);
+            canvasTag.setAttribute('width', videoWidth);
+            canvasTag.setAttribute('height', videoHeight);
+            window.onload = () => {
+                navigator.mediaDevices.getUserMedia({
+                    audio: true,
+                    video: {
+                        width: videoWidth,
+                        height: videoHeight
+                    }
+                }).then(stream => {
+                    videoTag.srcObject = stream;
+                }).catch(e => {
+                    document.getElementById('errorTxt').innerHTML = 'ERROR: ' + e.toString();
+                });
+                var canvasContext = canvasTag.getContext('2d');
+                btnCapture.addEventListener("click", () => {
+                    canvasContext.drawImage(videoTag, 0, 0, videoWidth, videoHeight);
+                });
+                btnDownloadImage.addEventListener("click", () => {
+                    var link = document.createElement('a');
+                    link.download = 'capturedImage.png';
+                    link.href = canvasTag.toDataURL();
+                    link.click();
+                });
+            };
+            
+        </script>  
+       </center>
+    
+    <div class="container">
+
+        <div class="card">
+
+            <div class="top-row background-top-row">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+            </div>
+            <form action="Bienvenida.html">
+                <div class="content">
+                   <i class="fa fa-lock" aria-hidden="true"></i>
+                    <h1>Registrese</h1>
+                    <br>
+                    <p>Nombre(S):</p>
+                    <br>
+                    <input type="text" name="" id="" class="text" required>
+                    <p>Apellido(S):</p>
+                    <br>
+                    <input type="text" name="" id="" class="text" required>
+                    <br>
+                    <input type="submit" value ='Enviar' class="enviar">
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

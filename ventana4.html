@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventana4</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <center><h1>PALABRAS PRINCIPALES</h1></center>
+    <br>
+    <br>
+    <center>
+        <img src="img/canasta.png" alt="" width="200" height="200">
+        <h3 id="canasta"> </h3>
+        <div class="botones">
+            <script>
+                var canasta4 = new Audio();
+                var basket4 = new Audio();
+                var xaak4 = new Audio();
+                canasta4.src="./audios/español/canasta4.aac";
+                basket4.src="./audios/ingles/basket4.aac";
+                xaak4.src="./audios/maya/xaak4.aac";
+            </script>
+            <p id="titulo" class="display-3 py-5"></p>
+             <a class="español" id="enviar" onclick='document.getElementById("titulo").innerHTML = nombre;' onmousedown="canasta4.play()">Español</a>
+             <a class="ingles" id="enviar" onclick='document.getElementById("titulo").innerHTML = nombres;' onmousedown="basket4.play()">Inglés</a>
+             <a class="maya" id="enviar" onclick='document.getElementById("titulo").innerHTML = App;'' onmousedown="xaak4.play()">Maya</a>
+        </div>
+        <script>
+            var nombre = "Canasta";
+            var nombres = "Basket";
+            var App = " Xaak";
+          </script>
+        <br>
+        <br>
+        <img src="img/zapato.png" alt="" width="200" height="200">
+        <h3 id="zapato"> </h3>
+        <div class="botones">
+            <script>
+                var zapato5 = new Audio();
+                var shoe5 = new Audio();
+                var xana5 = new Audio();
+                zapato5.src="./audios/español/zapato5.aac";
+                shoe5.src="./audios/ingles/shoe5.aac";
+                xana5.src="./audios/maya/xana5.aac";
+            </script>
+             <p id="titulo2" class="display-3 py-5"></p>
+             <a class="español" id="enviar" onclick='document.getElementById("titulo2").innerHTML = espa;' onmousedown="zapato5.play()">Español</a>
+             <a class="ingles" id="enviar" onclick='document.getElementById("titulo2").innerHTML = mayaa;' onmousedown="shoe5.play()">Inglés</a>
+             <a class="maya" id="enviar" onclick='document.getElementById("titulo2").innerHTML = inglees;' onmousedown="xana5.play()">Maya</a>
+        </div>
+        <script>
+            var espa= "Zapato";
+            var mayaa= "Shoe";
+            var inglees= "Xana";
+        </script>
+        <br>
+        <br>
+        <img src="img/ventilador.png" alt="" width="200" height="200">
+        <h3 id="ventilador"> </h3>
+        <div class="botones">
+            <script>
+                var ventilador6 = new Audio();
+                var fen6 = new Audio();
+                var pikit6 = new Audio();
+                ventilador6.src="./audios/español/ventilador6.aac";
+                fen6.src="./audios/ingles/fen6.aac";
+                pikit6.src="./audios/maya/pikit6.aac";
+            </script>
+            <p id="titulo3" class="display-3 py-5"></p>
+             <a class="español" id="enviar" onclick='document.getElementById("titulo3").innerHTML = sp;' onmousedown="ventilador6.play()">Español</a>
+             <a class="ingles" id="enviar" onclick='document.getElementById("titulo3").innerHTML = In;' onmousedown="fen6.play()">Inglés</a>
+             <a class="maya" id="enviar" onclick='document.getElementById("titulo3").innerHTML = no;' onmousedown="pikit6.play()">Maya</a>
+        </div>
+        <script>
+            var sp="Ventilador";
+            var In="Fan";
+            var no="Pikit";
+        </script>
+        <br>
+        <br>
+        <br>
+        <a href="./ventana3.html" class="myButton">Atrás</a>
+        <a href="./ventana5.html" class="myButton">Siguiente</a>
+    </center>
+
+     
+
+</body>
+</html>

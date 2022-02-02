@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventana3</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <center><h1>PALABRAS PRINCIPALES</h1></center>
+    <br>
+    <br>
+    <center>
+        <img src="img/juguetes.png" alt="" width="200" height="200">
+        <h3 id="juguete1"> </h3>
+        <div class="botones">
+            <script>
+                var juguete1 = new Audio();
+                var ingles1 = new Audio();
+                var maya1 = new Audio();
+                juguete1.src="./audios/español/juguete1.aac";
+                ingles1.src="./audios/ingles/toy1.aac";
+                maya1.src="./audios/maya/Baaxal1.aac";
+            </script>
+            <p id="titulo" class="display-3 py-5"></p>
+             <a class="español" id="enviar"onclick='document.getElementById("titulo").innerHTML = nombre;' onmousedown="juguete1.play()">Español</a>
+             <a class="ingles" id="enviar" onclick='document.getElementById("titulo").innerHTML = nombres;' onmousedown="ingles1.play()">Inglés</a>
+             <a class="maya" id="enviar" onclick='document.getElementById("titulo").innerHTML = App;' onmousedown="maya1.play()">Maya</a>
+            
+        </div>
+		 <script>
+		  var nombre = "Juguetes";
+		  var nombres = "Toy";
+		  var App = " Báaxal";
+		</script>
+        <br>
+        <br>
+        <img src="img/pelota-de-playa.png" alt="" width="200" height="200">
+        <h3 id="pelota-de-playa"> </h3>
+        <div class="botones">
+            <script>
+                var pelota = new Audio();
+                var ball = new Audio();
+                var woolis = new Audio();
+                pelota.src="./audios/español/pelota2.aac";
+                ball.src="./audios/ingles/ball 2.aac";
+                woolis.src="./audios/maya/woolis2.aac";
+            </script>
+           
+            <p id="titulo2" class="display-3 py-5"></p>
+             <a class="español" id="enviar"onclick='document.getElementById("titulo2").innerHTML = espa;'  onmousedown="pelota.play()">Español</a>
+             <a class="ingles" id="enviar" onclick='document.getElementById("titulo2").innerHTML = mayaa;' onmousedown="ball.play()">Inglés</a>
+             <a class="maya" id="enviar"  onclick='document.getElementById("titulo2").innerHTML = inglees;' onmousedown="woolis.play()">Maya</a>
+        </div>     
+            <script>
+                var espa= "Pelota";
+                var mayaa= "Ball";
+                var inglees= "wóolis";
+            </script>
+        <br>
+        <br>
+        <img src="img/silla-plegable.png" alt=""whidth="200" height="200">
+        <h3 id="silla-plegable"> </h3>
+        <div class="botones">
+            <script>
+                var silla = new Audio();
+                var chair = new Audio();
+                var kaanche = new Audio();
+                silla.src="./audios/español/silla3.aac";
+                chair.src="./audios/ingles/chair3.aac";
+                kaanche.src="./audios/maya/kaanche3.aac";
+            </script>
+            <p id="titulo3" class="display-3 py-5"></p>
+             <a class="español" id="enviar" onclick='document.getElementById("titulo3").innerHTML = sp;' onmousedown="silla.play()">Español</a>
+             <a class="ingles" id="enviar" onclick='document.getElementById("titulo3").innerHTML = In;' onmousedown="chair.play()">Inglés</a>
+             <a class="maya" id="enviar" onclick='document.getElementById("titulo3").innerHTML = no;' onmousedown="kaanche.play()">Maya</a>
+        </div>
+        <script>
+            var sp="Silla";
+            var In="Chair";
+            var no="k'áanche";
+        </script>
+        <br>
+        <br>
+        <br>
+        <a href="./Bienvenida.html" class="myButton">Atrás</a>
+        <a href="./ventana4.html" class="myButton">Siguiente</a>
+    </center>
+
+     
+
+</body>
+</html>
